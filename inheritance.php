@@ -27,4 +27,27 @@
 }
     $messi = new Player("messif50", "addidas", "messy", "10", "center forward");
     echo $messi->getName();
+  
+    class Boss
+  {
+      public $gun;
+      public $clicks;
+      public $burners;
+
+      function __construct($gun, $clicks, $burners)
+       {
+            $this->gun = $gun;
+            $this->clicks = $clicks;
+            $this->burners = $burners;
+
+        }
+        function getName()
+        {
+            return "gun: " . $this->gun . "<br />" .
+                   "clicks: " . $this->clicks . "<br />" .
+                   "burners: " . $this->burners;
+        }     
+}
+    $GreenLights = new Boss("glock", "45mag", "ghost gun");
+    echo $GreenLights->getName();
  
